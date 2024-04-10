@@ -105,6 +105,17 @@ class LinkedList {
   }
 }
 
-module.exports = LinkedList
+module.exports = LinkedList;
 // A node from a singly linked list doesn't know about
 // the previous node, only the next
+
+/**
+ * 
+ * 
+Singly linked lists excel in scenarios requiring sequential access and where memory efficiency is vital, as they only store data and a single pointer to the next node. They're ideal for implementing stacks and queues, where insertions and deletions occur at predictable points. However, their inability to traverse backwards limits flexibility and can complicate or slow down operations requiring access to previous nodes, like certain types of deletion or backward iteration. Additionally, their dynamic nature, while memory efficient for growth and shrinkage, means accessing elements by index is slower compared to arrays due to the need for linear traversal.
+
+Is good for:
+Undo functionality in text editors.
+Job scheduling in printers.
+Page history in web browsers.
+ */
